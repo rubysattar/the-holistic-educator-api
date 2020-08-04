@@ -1,7 +1,7 @@
-# Application Title: A Description
+# The Holistic Educator: A Description
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+- The final version of this project will be an application that teachers can use to track connections they make with students in order to inform the support they provide students for social-emotional development or behavioral concerns.
+- This project is near and dear to me as a huge advocate for social-emotional learning in schools. This application is a tool that many teachers who are tracking their connections with students will find helpful to ensure that they are reaching every student. 
 
 ## Important Links
 
@@ -11,22 +11,24 @@ wanted to do this project, or came up with this idea.
 
 ## Planning Story
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+[Results from my teacher poll conducted on instagram](https://imgur.com/dVmMwMG)
+
+- The first step in my planning process was to do market research. I asked other teachers about tools they wished to have in the classroom. Most teachers polled said they would like a way to keep track of which students with whom they have had check-ins.
+- Next,
 
 ### User Stories
 
 - As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+- As a user I want to Create a new student in my roster.
+- As a user I want to Read multiple student names.
+- As a user I want to Read a single note for a student.
+- As a user I want to Update a student I own in my roster.
+- As a user I want to Delete a student I own in my roster.
+- As a user, I want to Create a check-in note for each student.
+- As a user, I want to Read a check-in note for each student. 
+- As a user, I want to Read multiple check-in notes for each student.
+- As a user, I want to Update a check-in note for each student.
+- As a user, I want to Delete a check-in note for each student.
 
 ### Technologies Used
 
@@ -43,7 +45,8 @@ tofu.
 ## Images
 
 #### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+- [initial landing page wireframe](https://imgur.com/HANqQFv)
+- [initial application wireframe](https://imgur.com/fbpXkYj)
 
 ---
 
