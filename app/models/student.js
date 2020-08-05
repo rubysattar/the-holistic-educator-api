@@ -9,6 +9,10 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  checkInNotes: {
+    type: String,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
