@@ -9,7 +9,7 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  checkInNotes: {
+  checkedIn: {
     type: String,
     required: true
   },
