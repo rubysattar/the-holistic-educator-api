@@ -8,6 +8,7 @@
 ## Important Links
 
 - [Deployed API](https://whispering-anchorage-25173.herokuapp.com/)
+- [Client Repo](https://github.com/rubysattar/the-holistic-educator)
 - [Deployed Client](https://rubysattar.github.io/the-holistic-educator/)
 
 ## Planning Story
@@ -39,6 +40,7 @@
 - HTML/CSS
 - Bootstrap
 - Javascript
+- HandleBars
 
 ### Unsolved Problems
 
