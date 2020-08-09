@@ -57,4 +57,4 @@
 ---
 
 #### ERD:
-![ERD](https://www.smartdraw.com/entity-relationship-diagram/img/cardinality.jpg?bn=1510011144)
+[Initial Entity Relationship Diagram](https://imgur.com/zWtIKUa)
