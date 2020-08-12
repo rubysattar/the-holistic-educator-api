@@ -13,6 +13,11 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  hadCheckIn: {
+    type: Boolean,
+    required: true,
+    default: false
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
