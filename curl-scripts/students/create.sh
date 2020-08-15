@@ -11,9 +11,7 @@ curl "${API}${URL_PATH}" \
   --data '{
     "student": {
       "name": "'"${NAME}"'",
-      "grade": "'"${GRADE}"'",
-      "checkedIn": "'"${NOTE}"'",
-      "hadCheckIn": "'"${CHECKED}"'"
+      "grade": "'"${GRADE}"'"
     }
   }'
 

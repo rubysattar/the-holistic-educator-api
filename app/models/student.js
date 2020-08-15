@@ -1,5 +1,20 @@
 const mongoose = require('mongoose')
 
+const checkInSchema = new mongoose.Schema({
+  hadCheckIn: {
+    type: Boolean,
+    default: false
+  },
+  note: {
+    type: String
+  },
+  checkInDate: {
+    type: Date
+  }
+}, {
+  timestamps: true
+})
+
 const studentSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -9,15 +24,7 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  checkedIn: {
-    type: String,
-    required: true
-  },
-  hadCheckIn: {
-    type: Boolean,
-    required: true,
-    default: false
-  },
+  checkIn: [{ checkInSchema }],
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
