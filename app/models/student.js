@@ -21,10 +21,6 @@ const studentSchema = new mongoose.Schema({
     required: true
   },
   checkIns: [checkInSchema],
-  hadCheckIn: {
-    type: Boolean,
-    default: false
-  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
