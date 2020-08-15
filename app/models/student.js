@@ -20,7 +20,7 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  checkIn: [{ checkInSchema }],
+  checkIns: [checkInSchema],
   hadCheckIn: {
     type: Boolean,
     default: false

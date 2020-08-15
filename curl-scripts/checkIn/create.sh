@@ -9,7 +9,6 @@ curl "${API}/students/${ID}/checkins" \
   --header "Content-Type: application/json" \
   --data '{
     "checkIn": {
-      "hadCheckIn": "'"${HADCHECKIN}"'",
       "note": "'"${NOTE}"'",
       "checkInDate": "'"${DATE}"'"
     }

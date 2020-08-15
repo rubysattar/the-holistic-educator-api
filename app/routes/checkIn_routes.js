@@ -29,16 +29,18 @@ const router = express.Router()
 
 // CREATE A CHECK-IN
 router.post('/students/:id/checkins', (req, res) => {
-  const _id = req.params._id
+  const _id = req.params.id
   // accept data from the request
-  const checkIn = req.body.student.checkIn
+  const checkIn = req.body.checkIn
 
   Student.findById(_id)
     .then(student => {
-      student.checkIn.push(checkIn)
-      return student.save()
+      student.checkIns.push(checkIn)
+      student.save()
+        .then(student => {
+          return res.status(201).json({ student: student })
+        })
     })
-    .then(student => res.status(201).json({ student: student }))
     .catch(console.error)
 })
 
