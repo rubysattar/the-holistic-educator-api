@@ -28,7 +28,7 @@ const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 // CREATE A CHECK-IN
-router.post('/students/:id/checkins', (req, res) => {
+router.post('/students/:id/checkins', (req, res, next) => {
   const _id = req.params.id
   // accept data from the request
   const checkIn = req.body.checkIn
@@ -41,6 +41,23 @@ router.post('/students/:id/checkins', (req, res) => {
           return res.status(201).json({ student: student })
         })
     })
+    .catch(next)
+})
+
+// INDEX CHECK-IN
+router.get('/students/:id/checkins', (req, res) => {
+  const student = req.params.id
+  const checkIn = req.body.checkIn
+  Student.findById(student)
+    .then(() => {
+      // `students` will be an array of Mongoose documents
+      // we want to convert each one to a POJO, so we use `.map` to
+      // apply `.toObject` to each one
+      return student.checkIns.map(checkIn => checkIn.toObject())
+    })
+    // respond with status 200 and JSON of the examples
+    .then(checkIns => res.status(200).json({ checkIn: checkIns }))
+    // if an error occurs, pass it to the handler
     .catch(console.error)
 })
 
