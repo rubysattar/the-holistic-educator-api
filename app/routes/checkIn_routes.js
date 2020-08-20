@@ -45,18 +45,18 @@ router.post('/students/:id/checkins', (req, res, next) => {
 })
 
 // INDEX CHECK-IN
-router.get('/students/:id/checkins', (req, res) => {
+router.get('/students/:id/show-checkins', (req, res) => {
   const student = req.params.id
-  const checkIn = req.body.checkIn
-  Student.findById(student)
-    .then(() => {
+  const checkIn = req.body.student.checkIn
+  Student.find(checkIn)
+    .then(student => {
       // `students` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
-      return student.checkIns.map(checkIn => checkIn.toObject())
+      student.checkIns.map(checkIn => checkIn.toObject())
     })
     // respond with status 200 and JSON of the examples
-    .then(checkIns => res.status(200).json({ checkIn: checkIns }))
+    .then(checkIns => res.status(200).json(checkIns))
     // if an error occurs, pass it to the handler
     .catch(console.error)
 })
