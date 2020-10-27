@@ -15,6 +15,8 @@ const localDb = process.env.TESTENV ? database.test : database.development
 
 // Environment variable MONGODB_URI will be available in
 // heroku production evironment otherwise use test or development db
-const currentDb = process.env.MONGODB_URI || localDb
+// CHANGING THE HEROKU CONFIG REFERENCE BELOW FOR ATLAS MIGRATION
+// 'DB_URI' was 'MONGODB_URI'
+const currentDb = process.env.DB_URI || localDb
 
 module.exports = currentDb
